@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B5DB17190EB51700EDFD38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB16190EB51700EDFD38 /* Foundation.framework */; };
+		D6B5DB19190EB51700EDFD38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */; };
+		D6B5DB1B190EB51700EDFD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB1A190EB51700EDFD38 /* UIKit.framework */; };
+		D6B5DB21190EB51700EDFD38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B5DB1F190EB51700EDFD38 /* InfoPlist.strings */; };
+		D6B5DB23190EB51700EDFD38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB22190EB51700EDFD38 /* main.m */; };
+		D6B5DB27190EB51700EDFD38 /* FDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB26190EB51700EDFD38 /* FDAppDelegate.m */; };
+		D6B5DB2A190EB51700EDFD38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B5DB28190EB51700EDFD38 /* Main.storyboard */; };
+		D6B5DB2D190EB51700EDFD38 /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB2C190EB51700EDFD38 /* FDViewController.m */; };
+		D6B5DB2F190EB51700EDFD38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B5DB2E190EB51700EDFD38 /* Images.xcassets */; };
+		D6B5DB36190EB51700EDFD38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB35190EB51700EDFD38 /* XCTest.framework */; };
+		D6B5DB37190EB51700EDFD38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB16190EB51700EDFD38 /* Foundation.framework */; };
+		D6B5DB38190EB51700EDFD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB1A190EB51700EDFD38 /* UIKit.framework */; };
+		D6B5DB40190EB51700EDFD38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B5DB3E190EB51700EDFD38 /* InfoPlist.strings */; };
+		D6B5DB42190EB51700EDFD38 /* CashCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB41190EB51700EDFD38 /* CashCounterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B5DB39190EB51700EDFD38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B5DB0B190EB51700EDFD38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B5DB12190EB51700EDFD38;
+			remoteInfo = CashCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B5DB13190EB51700EDFD38 /* CashCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B5DB16190EB51700EDFD38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6B5DB1A190EB51700EDFD38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6B5DB1E190EB51700EDFD38 /* CashCounter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounter-Info.plist"; sourceTree = "<group>"; };
+		D6B5DB20190EB51700EDFD38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6B5DB22190EB51700EDFD38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6B5DB24190EB51700EDFD38 /* CashCounter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CashCounter-Prefix.pch"; sourceTree = "<group>"; };
+		D6B5DB25190EB51700EDFD38 /* FDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
+		D6B5DB26190EB51700EDFD38 /* FDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
+		D6B5DB29190EB51700EDFD38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B5DB2B190EB51700EDFD38 /* FDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
+		D6B5DB2C190EB51700EDFD38 /* FDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		D6B5DB2E190EB51700EDFD38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6B5DB34190EB51700EDFD38 /* CashCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B5DB35190EB51700EDFD38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D6B5DB3D190EB51700EDFD38 /* CashCounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterTests-Info.plist"; sourceTree = "<group>"; };
+		D6B5DB3F190EB51700EDFD38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6B5DB41190EB51700EDFD38 /* CashCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashCounterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B5DB10190EB51700EDFD38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB19190EB51700EDFD38 /* CoreGraphics.framework in Frameworks */,
+				D6B5DB1B190EB51700EDFD38 /* UIKit.framework in Frameworks */,
+				D6B5DB17190EB51700EDFD38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5DB31190EB51700EDFD38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB36190EB51700EDFD38 /* XCTest.framework in Frameworks */,
+				D6B5DB38190EB51700EDFD38 /* UIKit.framework in Frameworks */,
+				D6B5DB37190EB51700EDFD38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B5DB0A190EB51700EDFD38 = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB1C190EB51700EDFD38 /* CashCounter */,
+				D6B5DB3B190EB51700EDFD38 /* CashCounterTests */,
+				D6B5DB15190EB51700EDFD38 /* Frameworks */,
+				D6B5DB14190EB51700EDFD38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B5DB14190EB51700EDFD38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB13190EB51700EDFD38 /* CashCounter.app */,
+				D6B5DB34190EB51700EDFD38 /* CashCounterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B5DB15190EB51700EDFD38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB16190EB51700EDFD38 /* Foundation.framework */,
+				D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */,
+				D6B5DB1A190EB51700EDFD38 /* UIKit.framework */,
+				D6B5DB35190EB51700EDFD38 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B5DB1C190EB51700EDFD38 /* CashCounter */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB25190EB51700EDFD38 /* FDAppDelegate.h */,
+				D6B5DB26190EB51700EDFD38 /* FDAppDelegate.m */,
+				D6B5DB28190EB51700EDFD38 /* Main.storyboard */,
+				D6B5DB2B190EB51700EDFD38 /* FDViewController.h */,
+				D6B5DB2C190EB51700EDFD38 /* FDViewController.m */,
+				D6B5DB2E190EB51700EDFD38 /* Images.xcassets */,
+				D6B5DB1D190EB51700EDFD38 /* Supporting Files */,
+			);
+			path = CashCounter;
+			sourceTree = "<group>";
+		};
+		D6B5DB1D190EB51700EDFD38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB1E190EB51700EDFD38 /* CashCounter-Info.plist */,
+				D6B5DB1F190EB51700EDFD38 /* InfoPlist.strings */,
+				D6B5DB22190EB51700EDFD38 /* main.m */,
+				D6B5DB24190EB51700EDFD38 /* CashCounter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B5DB3B190EB51700EDFD38 /* CashCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB41190EB51700EDFD38 /* CashCounterTests.m */,
+				D6B5DB3C190EB51700EDFD38 /* Supporting Files */,
+			);
+			path = CashCounterTests;
+			sourceTree = "<group>";
+		};
+		D6B5DB3C190EB51700EDFD38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB3D190EB51700EDFD38 /* CashCounterTests-Info.plist */,
+				D6B5DB3E190EB51700EDFD38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B5DB12190EB51700EDFD38 /* CashCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B5DB45190EB51700EDFD38 /* Build configuration list for PBXNativeTarget "CashCounter" */;
+			buildPhases = (
+				D6B5DB0F190EB51700EDFD38 /* Sources */,
+				D6B5DB10190EB51700EDFD38 /* Frameworks */,
+				D6B5DB11190EB51700EDFD38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CashCounter;
+			productName = CashCounter;
+			productReference = D6B5DB13190EB51700EDFD38 /* CashCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B5DB33190EB51700EDFD38 /* CashCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B5DB48190EB51700EDFD38 /* Build configuration list for PBXNativeTarget "CashCounterTests" */;
+			buildPhases = (
+				D6B5DB30190EB51700EDFD38 /* Sources */,
+				D6B5DB31190EB51700EDFD38 /* Frameworks */,
+				D6B5DB32190EB51700EDFD38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B5DB3A190EB51700EDFD38 /* PBXTargetDependency */,
+			);
+			name = CashCounterTests;
+			productName = CashCounterTests;
+			productReference = D6B5DB34190EB51700EDFD38 /* CashCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B5DB0B190EB51700EDFD38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Fairbanksdan;
+				TargetAttributes = {
+					D6B5DB33190EB51700EDFD38 = {
+						TestTargetID = D6B5DB12190EB51700EDFD38;
+					};
+				};
+			};
+			buildConfigurationList = D6B5DB0E190EB51700EDFD38 /* Build configuration list for PBXProject "CashCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B5DB0A190EB51700EDFD38;
+			productRefGroup = D6B5DB14190EB51700EDFD38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B5DB12190EB51700EDFD38 /* CashCounter */,
+				D6B5DB33190EB51700EDFD38 /* CashCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B5DB11190EB51700EDFD38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB2F190EB51700EDFD38 /* Images.xcassets in Resources */,
+				D6B5DB21190EB51700EDFD38 /* InfoPlist.strings in Resources */,
+				D6B5DB2A190EB51700EDFD38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5DB32190EB51700EDFD38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB40190EB51700EDFD38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B5DB0F190EB51700EDFD38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB27190EB51700EDFD38 /* FDAppDelegate.m in Sources */,
+				D6B5DB23190EB51700EDFD38 /* main.m in Sources */,
+				D6B5DB2D190EB51700EDFD38 /* FDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B5DB30190EB51700EDFD38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B5DB42190EB51700EDFD38 /* CashCounterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B5DB3A190EB51700EDFD38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B5DB12190EB51700EDFD38 /* CashCounter */;
+			targetProxy = D6B5DB39190EB51700EDFD38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B5DB1F190EB51700EDFD38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B5DB20190EB51700EDFD38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6B5DB28190EB51700EDFD38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B5DB29190EB51700EDFD38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B5DB3E190EB51700EDFD38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B5DB3F190EB51700EDFD38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B5DB43190EB51700EDFD38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6B5DB44190EB51700EDFD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B5DB46190EB51700EDFD38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CashCounter/CashCounter-Prefix.pch";
+				INFOPLIST_FILE = "CashCounter/CashCounter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6B5DB47190EB51700EDFD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CashCounter/CashCounter-Prefix.pch";
+				INFOPLIST_FILE = "CashCounter/CashCounter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D6B5DB49190EB51700EDFD38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CashCounter.app/CashCounter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CashCounter/CashCounter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CashCounterTests/CashCounterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D6B5DB4A190EB51700EDFD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CashCounter.app/CashCounter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CashCounter/CashCounter-Prefix.pch";
+				INFOPLIST_FILE = "CashCounterTests/CashCounterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B5DB0E190EB51700EDFD38 /* Build configuration list for PBXProject "CashCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B5DB43190EB51700EDFD38 /* Debug */,
+				D6B5DB44190EB51700EDFD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B5DB45190EB51700EDFD38 /* Build configuration list for PBXNativeTarget "CashCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B5DB46190EB51700EDFD38 /* Debug */,
+				D6B5DB47190EB51700EDFD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B5DB48190EB51700EDFD38 /* Build configuration list for PBXNativeTarget "CashCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B5DB49190EB51700EDFD38 /* Debug */,
+				D6B5DB4A190EB51700EDFD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B5DB0B190EB51700EDFD38 /* Project object */;
+}
