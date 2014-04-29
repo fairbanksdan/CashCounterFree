@@ -21,6 +21,9 @@
 		D6B5DB38190EB51700EDFD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB1A190EB51700EDFD38 /* UIKit.framework */; };
 		D6B5DB40190EB51700EDFD38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B5DB3E190EB51700EDFD38 /* InfoPlist.strings */; };
 		D6B5DB42190EB51700EDFD38 /* CashCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB41190EB51700EDFD38 /* CashCounterTests.m */; };
+		D6B5DB4D190ED8F000EDFD38 /* SKNextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB4C190ED8F000EDFD38 /* SKNextField.m */; };
+		D6B5DB51190ED93400EDFD38 /* SKDigitField.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5DB50190ED93400EDFD38 /* SKDigitField.m */; };
+		D6B5DB7319102D4200EDFD38 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB7219102D4200EDFD38 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		D6B5DB3D190EB51700EDFD38 /* CashCounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CashCounterTests-Info.plist"; sourceTree = "<group>"; };
 		D6B5DB3F190EB51700EDFD38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6B5DB41190EB51700EDFD38 /* CashCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashCounterTests.m; sourceTree = "<group>"; };
+		D6B5DB4B190ED8F000EDFD38 /* SKNextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNextField.h; sourceTree = "<group>"; };
+		D6B5DB4C190ED8F000EDFD38 /* SKNextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNextField.m; sourceTree = "<group>"; };
+		D6B5DB4E190ED91E00EDFD38 /* SKConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKConstant.h; sourceTree = "<group>"; };
+		D6B5DB4F190ED93400EDFD38 /* SKDigitField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDigitField.h; sourceTree = "<group>"; };
+		D6B5DB50190ED93400EDFD38 /* SKDigitField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDigitField.m; sourceTree = "<group>"; };
+		D6B5DB7219102D4200EDFD38 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B5DB7319102D4200EDFD38 /* iAd.framework in Frameworks */,
 				D6B5DB19190EB51700EDFD38 /* CoreGraphics.framework in Frameworks */,
 				D6B5DB1B190EB51700EDFD38 /* UIKit.framework in Frameworks */,
 				D6B5DB17190EB51700EDFD38 /* Foundation.framework in Frameworks */,
@@ -101,6 +111,7 @@
 		D6B5DB15190EB51700EDFD38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6B5DB7219102D4200EDFD38 /* iAd.framework */,
 				D6B5DB16190EB51700EDFD38 /* Foundation.framework */,
 				D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */,
 				D6B5DB1A190EB51700EDFD38 /* UIKit.framework */,
@@ -117,6 +128,11 @@
 				D6B5DB28190EB51700EDFD38 /* Main.storyboard */,
 				D6B5DB2B190EB51700EDFD38 /* FDViewController.h */,
 				D6B5DB2C190EB51700EDFD38 /* FDViewController.m */,
+				D6B5DB4E190ED91E00EDFD38 /* SKConstant.h */,
+				D6B5DB4B190ED8F000EDFD38 /* SKNextField.h */,
+				D6B5DB4C190ED8F000EDFD38 /* SKNextField.m */,
+				D6B5DB4F190ED93400EDFD38 /* SKDigitField.h */,
+				D6B5DB50190ED93400EDFD38 /* SKDigitField.m */,
 				D6B5DB2E190EB51700EDFD38 /* Images.xcassets */,
 				D6B5DB1D190EB51700EDFD38 /* Supporting Files */,
 			);
@@ -251,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B5DB27190EB51700EDFD38 /* FDAppDelegate.m in Sources */,
+				D6B5DB51190ED93400EDFD38 /* SKDigitField.m in Sources */,
+				D6B5DB4D190ED8F000EDFD38 /* SKNextField.m in Sources */,
 				D6B5DB23190EB51700EDFD38 /* main.m in Sources */,
 				D6B5DB2D190EB51700EDFD38 /* FDViewController.m in Sources */,
 			);
