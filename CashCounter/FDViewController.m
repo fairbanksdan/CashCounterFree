@@ -44,6 +44,8 @@
     UITapGestureRecognizer *tapOutside = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)];
     [self.scrollView addGestureRecognizer:tapOutside];
     
+//    _pennyTextField.layer.borderColor=[[UIColor colorWithRed:50.0f/255.0f green:300.0f/255.0f blue:50.0f/255.0f alpha:1.0] CGColor];
+//    _pennyTextField.layer.borderWidth=1.5;
 }
 
 - (void)didReceiveMemoryWarning
