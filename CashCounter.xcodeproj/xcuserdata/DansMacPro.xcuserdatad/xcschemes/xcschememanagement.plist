@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CashCounterHDLite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>CashCounterLite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +28,26 @@
 			<true/>
 		</dict>
 		<key>D6B5DB33190EB51700EDFD38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6B5DB78191174D500EDFD38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6B5DB97191174D500EDFD38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6B5DBAF1911764C00EDFD38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D6B5DBCB1911764C00EDFD38</key>
 		<dict>
 			<key>primary</key>
 			<true/>

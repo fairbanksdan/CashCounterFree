@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6B5DB12190EB51700EDFD38"
-               BuildableName = "CashCounter.app"
-               BlueprintName = "CashCounter"
+               BlueprintIdentifier = "D6B5DB78191174D500EDFD38"
+               BuildableName = "CashCounterLite.app"
+               BlueprintName = "CashCounterLite"
                ReferencedContainer = "container:CashCounter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,43 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6B5DB33190EB51700EDFD38"
-               BuildableName = "CashCounterTests.xctest"
-               BlueprintName = "CashCounterTests"
-               ReferencedContainer = "container:CashCounter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6B5DB97191174D500EDFD38"
-               BuildableName = "CashCounterLiteTests.xctest"
-               BlueprintName = "CashCounterLiteTests"
-               ReferencedContainer = "container:CashCounter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6B5DBCB1911764C00EDFD38"
-               BuildableName = "CashCounterHDLiteTests.xctest"
-               BlueprintName = "CashCounterHDLiteTests"
-               ReferencedContainer = "container:CashCounter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6B5DB12190EB51700EDFD38"
-            BuildableName = "CashCounter.app"
-            BlueprintName = "CashCounter"
+            BlueprintIdentifier = "D6B5DB78191174D500EDFD38"
+            BuildableName = "CashCounterLite.app"
+            BlueprintName = "CashCounterLite"
             ReferencedContainer = "container:CashCounter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6B5DB12190EB51700EDFD38"
-            BuildableName = "CashCounter.app"
-            BlueprintName = "CashCounter"
+            BlueprintIdentifier = "D6B5DB78191174D500EDFD38"
+            BuildableName = "CashCounterLite.app"
+            BlueprintName = "CashCounterLite"
             ReferencedContainer = "container:CashCounter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6B5DB12190EB51700EDFD38"
-            BuildableName = "CashCounter.app"
-            BlueprintName = "CashCounter"
+            BlueprintIdentifier = "D6B5DB78191174D500EDFD38"
+            BuildableName = "CashCounterLite.app"
+            BlueprintName = "CashCounterLite"
             ReferencedContainer = "container:CashCounter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
