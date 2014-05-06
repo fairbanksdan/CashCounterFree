@@ -8,7 +8,7 @@
 
 #import "FDViewController.h"
 
-@interface FDViewController () <UITextFieldDelegate,UIGestureRecognizerDelegate>
+@interface FDViewController () <UITextFieldDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSString *str;
 
@@ -193,7 +193,17 @@
 #pragma mark Reset Button Method
 
 - (IBAction)resetButton:(id)sender {
-    
+        
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Reset"
+                                                    message:nil
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
+-(void)reset
+{
     NSString *emptyString = [NSString stringWithFormat:@""];
     
     _pennyCount = 0;
@@ -236,6 +246,15 @@
     self.twentyDollarTextField.text = emptyString;
     self.fiftyDollarTextField.text = emptyString;
     self.hundredDollarTextField.text = emptyString;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+
+    if (buttonIndex == 1)
+    {
+        [self reset];
+    }
 }
 
 #pragma mark Keyboard Methods
@@ -298,28 +317,28 @@
     }
 }
 
-#pragma mark iAd Delegate Methods
-
--(void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    [UIView beginAnimations:nil context:nil];
-    
-    [UIView setAnimationDuration:1];
-    
-    [banner setAlpha:1];
-    
-    [UIView commitAnimations];
-}
-
--(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-{
-    [UIView beginAnimations:nil context:nil];
-    
-    [UIView setAnimationDuration:1];
-    
-    [banner setAlpha:0];
-    
-    [UIView commitAnimations];
-}
+//#pragma mark iAd Delegate Methods
+//
+//-(void)bannerViewDidLoadAd:(ADBannerView *)banner
+//{
+//    [UIView beginAnimations:nil context:nil];
+//    
+//    [UIView setAnimationDuration:1];
+//    
+//    [banner setAlpha:1];
+//    
+//    [UIView commitAnimations];
+//}
+//
+//-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+//{
+//    [UIView beginAnimations:nil context:nil];
+//    
+//    [UIView setAnimationDuration:1];
+//    
+//    [banner setAlpha:0];
+//    
+//    [UIView commitAnimations];
+//}
 
 @end
