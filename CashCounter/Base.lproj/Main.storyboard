@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgN-Ly-waP">
-                                <rect key="frame" x="0.0" y="13" width="320" height="555"/>
+                                <rect key="frame" x="0.0" y="11" width="320" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cash Counter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8b-LX-31P">
-                                        <rect key="frame" x="76" y="4" width="169" height="37"/>
+                                        <rect key="frame" x="76" y="8" width="169" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
                                         <color key="textColor" red="0.20392158630000001" green="0.53725492949999998" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
@@ -47,11 +47,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNr-Od-ulH">
-                                        <rect key="frame" x="0.0" y="104" width="320" height="450"/>
+                                        <rect key="frame" x="0.0" y="104" width="320" height="452"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-c2-m3L">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="452"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-Ze-1oX">
@@ -424,14 +424,14 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xNr-Od-ulH" secondAttribute="trailing" id="0pA-fB-eSL"/>
                                     <constraint firstAttribute="bottom" secondItem="xNr-Od-ulH" secondAttribute="bottom" id="AyJ-9v-cEG"/>
-                                    <constraint firstItem="xNr-Od-ulH" firstAttribute="top" secondItem="Q1X-pQ-BzI" secondAttribute="bottom" constant="4" id="O3B-Ff-FIZ"/>
                                     <constraint firstItem="xNr-Od-ulH" firstAttribute="leading" secondItem="YgN-Ly-waP" secondAttribute="leading" id="rLa-Ee-cv1"/>
+                                    <constraint firstItem="xNr-Od-ulH" firstAttribute="top" secondItem="Q1X-pQ-BzI" secondAttribute="bottom" constant="3" id="zmg-bp-zIz"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YgN-Ly-waP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="13" id="LuL-Fl-scV"/>
+                            <constraint firstItem="YgN-Ly-waP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="11" id="3c4-2H-cjA"/>
                             <constraint firstAttribute="bottom" secondItem="YgN-Ly-waP" secondAttribute="bottom" id="UWM-M4-abM"/>
                             <constraint firstItem="YgN-Ly-waP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hKG-PU-xuM"/>
                         </constraints>
