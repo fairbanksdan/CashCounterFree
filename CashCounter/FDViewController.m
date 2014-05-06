@@ -16,6 +16,8 @@
 
 @property (strong,nonatomic) NSArray *textFields;
 
+@property (nonatomic) BOOL smallScreen;
+
 @end
 
 @implementation FDViewController
@@ -24,8 +26,10 @@
     float _nickelCount;
     float _dimeCount;
     float _quarterCount;
+    float _fiftyCentCount;
     
     float _singleDollarCount;
+    float _twoDollarCount;
     float _fiveDollarCount;
     float _tenDollarCount;
     float _twentyDollarCount;
@@ -39,13 +43,15 @@
 {
     [super viewDidLoad];
     
-    self.textFields = @[_pennyTextField,_nickelTextField,_dimeTextField,_quarterTextField,_singleDollarTextField,_fiveDollarTextField,_tenDollarTextField,_twentyDollarTextField,_fiftyDollarTextField,_hundredDollarTextField];
+    self.textFields = @[_pennyTextField,_nickelTextField,_dimeTextField,_quarterTextField,_fiftyCentTextField,_singleDollarTextField,_twoDollarTextField,_fiveDollarTextField,_tenDollarTextField,_twentyDollarTextField,_fiftyDollarTextField,_hundredDollarTextField];
     
     UITapGestureRecognizer *tapOutside = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)];
     [self.scrollView addGestureRecognizer:tapOutside];
     
-//    _pennyTextField.layer.borderColor=[[UIColor colorWithRed:50.0f/255.0f green:300.0f/255.0f blue:50.0f/255.0f alpha:1.0] CGColor];
-//    _pennyTextField.layer.borderWidth=1.5;
+    if (self.view.frame.size.height <= 480)
+    {
+        self.smallScreen = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,6 +93,13 @@
     
     [self Updatelabels];
 }
+- (IBAction)fiftyCentCounter:(id)sender {
+    _str = [_fiftyCentTextField text];
+    
+    _fiftyCentCount = [_str intValue]*0.5;
+    
+    [self Updatelabels];
+}
 
 - (IBAction)singleDollarCounter:(id)sender {
     _str = [_singleDollarTextField text];
@@ -94,6 +107,15 @@
     _singleDollarCount = [_str intValue];
     
     [self Updatelabels];
+}
+
+- (IBAction)twoDollarCounter:(id)sender {
+    _str = [_twoDollarTextField text];
+    
+    _twoDollarCount = [_str intValue]*2;
+    
+    [self Updatelabels];
+    
 }
 
 - (IBAction)fiveDollarCounter:(id)sender {
@@ -140,7 +162,7 @@
 
 -(void)Updatelabels
 {
-    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_singleDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
+    _grandTotalCount = _pennyCount+_nickelCount+_dimeCount+_quarterCount+_fiftyCentCount+_singleDollarCount+_twoDollarCount+_fiftyDollarCount+_tenDollarCount+_twentyDollarCount+_fiftyDollarCount+_hundredDollarCount;
     
     NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
     [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
@@ -150,7 +172,9 @@
     self.nickelTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_nickelCount]]];
     self.dimeTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_dimeCount]]];
     self.quarterTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_quarterCount]]];
+    self.fiftyCentTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyCentCount]]];
     self.singleDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_singleDollarCount]]];
+    self.twoDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twoDollarCount]]];
     self.fiveDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiveDollarCount]]];
     self.tenDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_tenDollarCount]]];
     self.twentyDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_twentyDollarCount]]];
@@ -176,7 +200,9 @@
     _nickelCount = 0;
     _dimeCount = 0;
     _quarterCount = 0;
+    _fiftyCentCount = 0;
     _singleDollarCount = 0;
+    _twoDollarCount = 0;
     _fiveDollarCount = 0;
     _tenDollarCount = 0;
     _twentyDollarCount = 0;
@@ -188,7 +214,9 @@
     self.nickelTotalLabel.text = [NSString stringWithFormat:@"%.02f",_nickelCount];
     self.dimeTotalLabel.text = [NSString stringWithFormat:@"%.02f",_dimeCount];
     self.quarterTotalLabel.text = [NSString stringWithFormat:@"%.02f",_quarterCount];
+    self.fiftyCentTotalLabel.text = [NSString stringWithFormat:@"%.02f",_fiftyCentCount];
     self.singleDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_singleDollarCount];
+    self.twoDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_twoDollarCount];
     self.fiveDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_fiveDollarCount];
     self.tenDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_tenDollarCount];
     self.twentyDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_twentyDollarCount];
@@ -200,7 +228,9 @@
     self.nickelTextField.text = emptyString;
     self.dimeTextField.text = emptyString;
     self.quarterTextField.text = emptyString;
+    self.fiftyCentTextField.text = emptyString;
     self.singleDollarTextField.text = emptyString;
+    self.twoDollarTextField.text = emptyString;
     self.fiveDollarTextField.text = emptyString;
     self.tenDollarTextField.text = emptyString;
     self.twentyDollarTextField.text = emptyString;
@@ -227,12 +257,31 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    if (textField.frame.origin.y > 300 && textField.frame.origin.y < 400)
+    NSInteger startPoint;
+    NSInteger offset;
+    NSInteger startPointTwo;
+    NSInteger offsetTwo;
+    
+    if (self.smallScreen) {
+        startPoint = 100;
+        offset = 75;
+        startPointTwo = 415;
+        offsetTwo = 113;
+        
+    } else {
+        startPoint = 170;
+        offset = 150;
+        startPointTwo = 415;
+        offsetTwo = 188;
+    }
+    
+    if (textField.frame.origin.y > startPoint && textField.frame.origin.y < startPointTwo)
     {
-        [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - 278) animated:YES];
-    } else if (textField.frame.origin.y > 400)
+        [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - offset) animated:YES];
+    }
+    else if (textField.frame.origin.y > startPointTwo)
     {
-        [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - 270) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - offsetTwo) animated:YES];
     }
 }
 
