@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D63965E01919D5F2008F5CB5 /* Main Small.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */; };
 		D6B5DB17190EB51700EDFD38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB16190EB51700EDFD38 /* Foundation.framework */; };
 		D6B5DB19190EB51700EDFD38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */; };
 		D6B5DB1B190EB51700EDFD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB1A190EB51700EDFD38 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D63965DF1919D5F2008F5CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main Small.storyboard"; sourceTree = "<group>"; };
 		D6B5DB13190EB51700EDFD38 /* CashCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B5DB16190EB51700EDFD38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 				D6B5DB25190EB51700EDFD38 /* FDAppDelegate.h */,
 				D6B5DB26190EB51700EDFD38 /* FDAppDelegate.m */,
 				D6B5DB28190EB51700EDFD38 /* Main.storyboard */,
+				D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */,
 				D6B5DB2B190EB51700EDFD38 /* FDViewController.h */,
 				D6B5DB2C190EB51700EDFD38 /* FDViewController.m */,
 				D6B5DB4E190ED91E00EDFD38 /* SKConstant.h */,
@@ -247,6 +250,7 @@
 			files = (
 				D6B5DB2F190EB51700EDFD38 /* Images.xcassets in Resources */,
 				D6B5DB21190EB51700EDFD38 /* InfoPlist.strings in Resources */,
+				D63965E01919D5F2008F5CB5 /* Main Small.storyboard in Resources */,
 				D6B5DB2A190EB51700EDFD38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +297,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D63965DF1919D5F2008F5CB5 /* Base */,
+			);
+			name = "Main Small.storyboard";
+			sourceTree = "<group>";
+		};
 		D6B5DB1F190EB51700EDFD38 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,7 +12,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    UIStoryboard *storyboard;
+    
+    if (screenHeight == 568) {
+        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    } else {
+        storyboard = [UIStoryboard storyboardWithName:@"Main Small" bundle:nil];
+    }
+    
+    UIViewController *rootViewController = [storyboard instantiateInitialViewController];
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

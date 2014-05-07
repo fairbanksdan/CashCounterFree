@@ -7,6 +7,7 @@
 //
 
 #import "FDViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface FDViewController () <UITextFieldDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate>
 
@@ -52,6 +53,37 @@
     {
         self.smallScreen = YES;
     }
+    
+    _pennyTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _pennyTextField.layer.borderWidth = 0.5;
+    _nickelTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _nickelTextField.layer.borderWidth = 0.5;
+    _dimeTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _dimeTextField.layer.borderWidth = 0.5;
+    _quarterTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _quarterTextField.layer.borderWidth = 0.5;
+    _fiftyCentTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiftyCentTextField.layer.borderWidth = 0.5;
+    _singleDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _singleDollarTextField.layer.borderWidth = 0.5;
+    _twoDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _twoDollarTextField.layer.borderWidth = 0.5;
+    _fiveDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiveDollarTextField.layer.borderWidth = 0.5;
+    _tenDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _tenDollarTextField.layer.borderWidth = 0.5;
+    _twentyDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _twentyDollarTextField.layer.borderWidth = 0.5;
+    _fiftyDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _fiftyDollarTextField.layer.borderWidth = 0.5;
+    _hundredDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
+    _hundredDollarTextField.layer.borderWidth = 0.5;
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+        //_pennyTextField.layer.borderColor=[[UIColor yellowColor]CGColor];
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -246,6 +278,11 @@
     self.twentyDollarTextField.text = emptyString;
     self.fiftyDollarTextField.text = emptyString;
     self.hundredDollarTextField.text = emptyString;
+    
+    for (UITextField *textField in self.textFields)
+    {
+        [textField resignFirstResponder];
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -283,9 +320,9 @@
     
     if (self.smallScreen) {
         startPoint = 100;
-        offset = 75;
-        startPointTwo = 452;
-        offsetTwo = 75;
+        offset = 94;
+        startPointTwo = 320;
+        offsetTwo = 125;
         
     } else {
         startPoint = 170;
