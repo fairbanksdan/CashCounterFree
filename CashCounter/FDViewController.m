@@ -284,8 +284,8 @@
     if (self.smallScreen) {
         startPoint = 100;
         offset = 75;
-        startPointTwo = 415;
-        offsetTwo = 113;
+        startPointTwo = 452;
+        offsetTwo = 75;
         
     } else {
         startPoint = 170;
