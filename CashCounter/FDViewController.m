@@ -314,30 +314,30 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     NSInteger startPoint;
-    NSInteger offset;
     NSInteger startPointTwo;
-    NSInteger offsetTwo;
+    NSInteger offset;
+    NSInteger inset;
     
     if (self.smallScreen) {
         startPoint = 100;
-        offset = 94;
-        startPointTwo = 320;
-        offsetTwo = 125;
+        startPointTwo = 0;
+        offset = 84;
+        inset = 260;
         
     } else {
         startPoint = 170;
-        offset = 150;
-        startPointTwo = 415;
-        offsetTwo = 188;
+        startPointTwo = 0;
+        offset = 151;
+        inset = 265;
     }
     
-    if (textField.frame.origin.y > startPoint && textField.frame.origin.y < startPointTwo)
+    if (textField.frame.origin.y > startPoint)
     {
         [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - offset) animated:YES];
     }
-    else if (textField.frame.origin.y > startPointTwo)
-    {
-        [self.scrollView setContentOffset:CGPointMake(0, textField.frame.origin.y - offsetTwo) animated:YES];
+    
+    if (textField.frame.origin.y > startPointTwo) {
+        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, inset, 0);
     }
 }
 
@@ -346,36 +346,20 @@
     [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
+
+
 -(void)dismissKeyboard:(id)sender
 {
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3];
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    [UIView commitAnimations];
+    
     for (UITextField *textField in self.textFields)
     {
         [textField resignFirstResponder];
     }
+    
 }
-
-//#pragma mark iAd Delegate Methods
-//
-//-(void)bannerViewDidLoadAd:(ADBannerView *)banner
-//{
-//    [UIView beginAnimations:nil context:nil];
-//    
-//    [UIView setAnimationDuration:1];
-//    
-//    [banner setAlpha:1];
-//    
-//    [UIView commitAnimations];
-//}
-//
-//-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-//{
-//    [UIView beginAnimations:nil context:nil];
-//    
-//    [UIView setAnimationDuration:1];
-//    
-//    [banner setAlpha:0];
-//    
-//    [UIView commitAnimations];
-//}
 
 @end

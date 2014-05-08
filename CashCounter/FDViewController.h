@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
 
-@interface FDViewController : UIViewController <ADBannerViewDelegate>
+@interface FDViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *pennyTextField;
 @property (weak, nonatomic) IBOutlet UITextField *nickelTextField;
