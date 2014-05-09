@@ -267,7 +267,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="singleDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="VzM-CD-D9R"/>
+                                                            <action selector="singleDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="LUU-WG-l8u"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="sTa-yq-OSP"/>
                                                         </connections>
                                                     </textField>
@@ -280,8 +280,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="singleDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="99i-ke-xdc"/>
-                                                            <action selector="twoDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="mes-MP-bFT"/>
+                                                            <action selector="twoDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="tgj-pJ-HvF"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="fGY-iu-CKx"/>
                                                         </connections>
                                                     </textField>
@@ -294,7 +293,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="fiveDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="7fs-wA-IWs"/>
+                                                            <action selector="fiveDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="EIw-Mq-hgN"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="eDr-M2-av4"/>
                                                         </connections>
                                                     </textField>
@@ -307,7 +306,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="quarterCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="bS2-oU-Juk"/>
+                                                            <action selector="quarterCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="leG-By-snn"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="c2O-Wr-RU7"/>
                                                         </connections>
                                                     </textField>
@@ -320,8 +319,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="fiftyCentCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="6dH-N7-Pzb"/>
-                                                            <action selector="quarterCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="99A-4J-FhO"/>
+                                                            <action selector="fiftyCentCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="sBE-fB-mYX"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="pBj-gc-9Si"/>
                                                         </connections>
                                                     </textField>
@@ -334,7 +332,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="hundredDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="PnT-Gs-YFr"/>
+                                                            <action selector="hundredDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Sp8-Bm-bkE"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="urt-b1-LaR"/>
                                                         </connections>
                                                     </textField>
@@ -347,7 +345,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="tenDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="DTz-0h-dhF"/>
+                                                            <action selector="tenDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="0wB-43-RMh"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="4cO-Ht-Uvx"/>
                                                         </connections>
                                                     </textField>
@@ -360,7 +358,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="dimeCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="Qkt-UW-CGD"/>
+                                                            <action selector="dimeCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="agV-RG-XQA"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="if2-Gv-RJ7"/>
                                                         </connections>
                                                     </textField>
@@ -373,7 +371,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="fiftyDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="ThN-Y6-gp7"/>
+                                                            <action selector="fiftyDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="VAS-yD-S09"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="pIZ-a0-Ay5"/>
                                                         </connections>
                                                     </textField>
@@ -386,7 +384,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="twentyDollarCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="JPK-ui-ACI"/>
+                                                            <action selector="twentyDollarCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="n5a-ku-ubc"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="kzS-Jf-XCe"/>
                                                         </connections>
                                                     </textField>
@@ -399,7 +397,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="nickelCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="l7y-2i-1Gu"/>
+                                                            <action selector="nickelCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Yr6-W4-Iiz"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="MzH-vE-7f6"/>
                                                         </connections>
                                                     </textField>
@@ -411,7 +409,7 @@
                                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
-                                                            <action selector="pennyCounter:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="e5k-je-mBN"/>
+                                                            <action selector="pennyCounter:" destination="vXZ-lx-hvc" eventType="editingChanged" id="bPA-Ul-NGr"/>
                                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="klH-jz-dKX"/>
                                                         </connections>
                                                     </textField>
