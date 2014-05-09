@@ -23,21 +23,21 @@
 
 @implementation FDViewController
 {
-    float _pennyCount;
-    float _nickelCount;
-    float _dimeCount;
-    float _quarterCount;
-    float _fiftyCentCount;
+    CGFloat _pennyCount;
+    CGFloat _nickelCount;
+    CGFloat _dimeCount;
+    CGFloat _quarterCount;
+    CGFloat _fiftyCentCount;
     
-    float _singleDollarCount;
-    float _twoDollarCount;
-    float _fiveDollarCount;
-    float _tenDollarCount;
-    float _twentyDollarCount;
-    float _fiftyDollarCount;
-    float _hundredDollarCount;
+    CGFloat _singleDollarCount;
+    CGFloat _twoDollarCount;
+    CGFloat _fiveDollarCount;
+    CGFloat _tenDollarCount;
+    CGFloat _twentyDollarCount;
+    CGFloat _fiftyDollarCount;
+    CGFloat _hundredDollarCount;
     
-    float _grandTotalCount;
+    CGFloat _grandTotalCount;
 }
 
 - (void)viewDidLoad
@@ -78,12 +78,6 @@
     _fiftyDollarTextField.layer.borderWidth = 0.5;
     _hundredDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
     _hundredDollarTextField.layer.borderWidth = 0.5;
-}
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-        //_pennyTextField.layer.borderColor=[[UIColor yellowColor]CGColor];
-   
 }
 
 - (void)didReceiveMemoryWarning
