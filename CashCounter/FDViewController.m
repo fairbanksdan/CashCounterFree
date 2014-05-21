@@ -207,7 +207,8 @@
     self.fiftyDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_fiftyDollarCount]]];
     self.hundredDollarTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_hundredDollarCount]]];
     
-    self.GrandTotalLabel.text = [NSString stringWithFormat:@"$%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_grandTotalCount]]];
+    NSString *localCurrencySymbol = NSLocalizedString(@"happy", nil);
+    self.GrandTotalLabel.text = [NSString stringWithFormat:@"%@%@", localCurrencySymbol,[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_grandTotalCount]]];
     
 }
 
@@ -258,7 +259,9 @@
     self.twentyDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_twentyDollarCount];
     self.fiftyDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_fiftyDollarCount];
     self.hundredDollarTotalLabel.text = [NSString stringWithFormat:@"%.02f",_hundredDollarCount];
-    self.GrandTotalLabel.text = [NSString stringWithFormat:@"$%.02f",_grandTotalCount];
+    
+    NSString *localCurrencySymbol = NSLocalizedString(@"currencySymbol", nil);
+    self.GrandTotalLabel.text = [NSString stringWithFormat:@"%@%.02f",localCurrencySymbol,_grandTotalCount];
     
     self.pennyTextField.text = emptyString;
     self.nickelTextField.text = emptyString;
@@ -287,6 +290,13 @@
         [self reset];
     }
 }
+
+//- (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+//{
+//    NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
+//    self.resetButton.enabled = newText.length > 0;
+//    return YES;
+//}
 
 #pragma mark Keyboard Methods
 

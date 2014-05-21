@@ -1,0 +1,84 @@
+
+/* Class = "IBUILabel"; text = "$50"; ObjectID = "0Yd-fU-FTe"; */
+"0Yd-fU-FTe.text" = "$50";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "6tP-aZ-rb5"; */
+"6tP-aZ-rb5.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "25¢"; ObjectID = "7hF-LC-QE4"; */
+"7hF-LC-QE4.text" = "25¢";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "9Uj-43-POV"; */
+"9Uj-43-POV.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "$20"; ObjectID = "Efg-mT-yEf"; */
+"Efg-mT-yEf.text" = "$20";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "H7a-Mp-02C"; */
+"H7a-Mp-02C.text" = "0.00";
+
+/* Class = "IBUIButton"; normalTitle = "Remettre"; ObjectID = "Iyf-WQ-XNS"; */
+"Iyf-WQ-XNS.normalTitle" = "Remettre";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "N6n-5M-CfG"; */
+"N6n-5M-CfG.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "Nec-U1-mqU"; */
+"Nec-U1-mqU.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "$10"; ObjectID = "PYi-Mo-tgV"; */
+"PYi-Mo-tgV.text" = "$10";
+
+/* Class = "IBUILabel"; text = "5¢"; ObjectID = "Pv2-wp-CI6"; */
+"Pv2-wp-CI6.text" = "5¢";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "PyS-EL-9yB"; */
+"PyS-EL-9yB.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "Total"; ObjectID = "Q1X-pQ-BzI"; */
+"Q1X-pQ-BzI.text" = "Total";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "Qvw-oe-ojh"; */
+"Qvw-oe-ojh.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "$2"; ObjectID = "RSa-zx-t2V"; */
+"RSa-zx-t2V.text" = "$2";
+
+/* Class = "IBUILabel"; text = "Cash Counter"; ObjectID = "Y8b-LX-31P"; */
+"Y8b-LX-31P.text" = "Cash Counter";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "bfz-C9-kQD"; */
+"bfz-C9-kQD.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "dh9-DQ-Ror"; */
+"dh9-DQ-Ror.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "$0.00"; ObjectID = "e2d-OU-umz"; */
+"e2d-OU-umz.text" = "$0.00";
+
+/* Class = "IBUILabel"; text = "$5"; ObjectID = "e7H-Vo-nnF"; */
+"e7H-Vo-nnF.text" = "$5";
+
+/* Class = "IBUILabel"; text = "10¢"; ObjectID = "jLj-y7-QOb"; */
+"jLj-y7-QOb.text" = "10¢";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "jwQ-UR-ftR"; */
+"jwQ-UR-ftR.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "knK-Pq-MKm"; */
+"knK-Pq-MKm.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "50¢"; ObjectID = "sNB-wK-Nml"; */
+"sNB-wK-Nml.text" = "50¢";
+
+/* Class = "IBUILabel"; text = "$100"; ObjectID = "um2-F9-Iy3"; */
+"um2-F9-Iy3.text" = "$100";
+
+/* Class = "IBUILabel"; text = "0.00"; ObjectID = "vJK-X3-Avl"; */
+"vJK-X3-Avl.text" = "0.00";
+
+/* Class = "IBUILabel"; text = "$1"; ObjectID = "xE2-rs-cVr"; */
+"xE2-rs-cVr.text" = "$1";
+
+/* Class = "IBUILabel"; text = "1¢"; ObjectID = "yiJ-9a-TZE"; */
+"yiJ-9a-TZE.text" = "1¢";
