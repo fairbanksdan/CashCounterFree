@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D63965E01919D5F2008F5CB5 /* Main Small.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */; };
+		D674A66519490CD0001BE1BB /* FDPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D674A66419490CD0001BE1BB /* FDPopoverViewController.m */; };
+		D674A66C19490DB4001BE1BB /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D674A66B19490DB4001BE1BB /* UIImage+ImageEffects.m */; };
 		D6B5DB17190EB51700EDFD38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB16190EB51700EDFD38 /* Foundation.framework */; };
 		D6B5DB19190EB51700EDFD38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */; };
 		D6B5DB1B190EB51700EDFD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5DB1A190EB51700EDFD38 /* UIKit.framework */; };
@@ -39,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		D63965DF1919D5F2008F5CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main Small.storyboard"; sourceTree = "<group>"; };
+		D674A66319490CD0001BE1BB /* FDPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPopoverViewController.h; sourceTree = "<group>"; };
+		D674A66419490CD0001BE1BB /* FDPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPopoverViewController.m; sourceTree = "<group>"; };
+		D674A66A19490DB4001BE1BB /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		D674A66B19490DB4001BE1BB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		D6B5DB13190EB51700EDFD38 /* CashCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B5DB16190EB51700EDFD38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6B5DB18190EB51700EDFD38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +103,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D674A66619490D30001BE1BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D674A66319490CD0001BE1BB /* FDPopoverViewController.h */,
+				D674A66419490CD0001BE1BB /* FDPopoverViewController.m */,
+				D6B5DB2B190EB51700EDFD38 /* FDViewController.h */,
+				D6B5DB2C190EB51700EDFD38 /* FDViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D674A66719490D58001BE1BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB28190EB51700EDFD38 /* Main.storyboard */,
+				D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D674A66819490D70001BE1BB /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED1441192D1D3E002B76E9 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		D674A66919490D85001BE1BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5DB4E190ED91E00EDFD38 /* SKConstant.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		D6B5DB0A190EB51700EDFD38 = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +173,14 @@
 		D6B5DB1C190EB51700EDFD38 /* CashCounter */ = {
 			isa = PBXGroup;
 			children = (
+				D674A66A19490DB4001BE1BB /* UIImage+ImageEffects.h */,
+				D674A66B19490DB4001BE1BB /* UIImage+ImageEffects.m */,
+				D674A66919490D85001BE1BB /* Model */,
+				D674A66819490D70001BE1BB /* Localization */,
+				D674A66719490D58001BE1BB /* View */,
+				D674A66619490D30001BE1BB /* Controller */,
 				D6B5DB25190EB51700EDFD38 /* FDAppDelegate.h */,
 				D6B5DB26190EB51700EDFD38 /* FDAppDelegate.m */,
-				D6B5DB28190EB51700EDFD38 /* Main.storyboard */,
-				D63965DE1919D5F2008F5CB5 /* Main Small.storyboard */,
-				D6ED1441192D1D3E002B76E9 /* Localizable.strings */,
-				D6B5DB2B190EB51700EDFD38 /* FDViewController.h */,
-				D6B5DB2C190EB51700EDFD38 /* FDViewController.m */,
-				D6B5DB4E190ED91E00EDFD38 /* SKConstant.h */,
 				D6B5DB4B190ED8F000EDFD38 /* SKNextField.h */,
 				D6B5DB4C190ED8F000EDFD38 /* SKNextField.m */,
 				D6B5DB4F190ED93400EDFD38 /* SKDigitField.h */,
@@ -281,8 +323,10 @@
 			files = (
 				D6B5DB27190EB51700EDFD38 /* FDAppDelegate.m in Sources */,
 				D6B5DB51190ED93400EDFD38 /* SKDigitField.m in Sources */,
+				D674A66C19490DB4001BE1BB /* UIImage+ImageEffects.m in Sources */,
 				D6B5DB4D190ED8F000EDFD38 /* SKNextField.m in Sources */,
 				D6B5DB23190EB51700EDFD38 /* main.m in Sources */,
+				D674A66519490CD0001BE1BB /* FDPopoverViewController.m in Sources */,
 				D6B5DB2D190EB51700EDFD38 /* FDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -420,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

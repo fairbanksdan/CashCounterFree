@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FDPopoverViewController.h"
 
-@interface FDViewController : UIViewController
+@interface FDViewController : UIViewController <FDPopoverViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *pennyTextField;
 @property (weak, nonatomic) IBOutlet UITextField *nickelTextField;

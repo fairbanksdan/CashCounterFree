@@ -18,7 +18,7 @@
 "H7a-Mp-02C.text" = "0.00";
 
 /* Class = "IBUIButton"; normalTitle = "Remettre"; ObjectID = "Iyf-WQ-XNS"; */
-"Iyf-WQ-XNS.normalTitle" = "Remettre";
+"Iyf-WQ-XNS.normalTitle" = "Reset";
 
 /* Class = "IBUILabel"; text = "0.00"; ObjectID = "N6n-5M-CfG"; */
 "N6n-5M-CfG.text" = "0.00";

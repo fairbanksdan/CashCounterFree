@@ -8,6 +8,7 @@
 
 #import "FDViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIImage+ImageEffects.h"
 
 @interface FDViewController () <UITextFieldDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate>
 
@@ -16,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (strong,nonatomic) NSArray *textFields;
+
+@property (strong, nonatomic) FDPopoverViewController *popoverVC;
+@property (nonatomic, strong) UIImageView *snapShotView;
 
 @property (nonatomic) BOOL smallScreen;
 
@@ -78,6 +82,11 @@
     _fiftyDollarTextField.layer.borderWidth = 0.5;
     _hundredDollarTextField.layer.borderColor=[[UIColor grayColor]CGColor];
     _hundredDollarTextField.layer.borderWidth = 0.5;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -192,7 +201,7 @@
     
     NSNumberFormatter *currencyFormatter = [[NSNumberFormatter alloc] init];
     [currencyFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    [currencyFormatter setCurrencySymbol:@""];
+    [currencyFormatter setCurrencySymbol:@" "];
     
     self.pennyTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_pennyCount]]];
     self.nickelTotalLabel.text = [NSString stringWithFormat:@"%@",[currencyFormatter stringFromNumber:[NSNumber numberWithFloat:_nickelCount]]];
@@ -364,6 +373,87 @@
         [textField resignFirstResponder];
     }
     
+}
+- (IBAction)infoButtonPressed:(UIButton *)sender {
+    
+    
+    _popoverVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PopoverVC"];
+    
+    UIButton *dismissButton = [[UIButton alloc] initWithFrame:_popoverVC.view.bounds];
+    
+    [self.view addSubview:_popoverVC.view];
+    [_popoverVC.view addSubview:dismissButton];
+    
+    _popoverVC.view.frame = CGRectMake(0, 0, 320, 568);
+    _popoverVC.view.center = CGPointMake(self.view.center.x, self.view.center.y - 500);
+    self.view.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.0];
+    
+    _snapShotView = [FDViewController snapshotForView:self.view.superview];
+    _snapShotView.alpha = 0.f;
+    
+    [self.view addSubview:_snapShotView];
+    [self.view addSubview:_popoverVC.view];
+    
+    [UIView animateWithDuration:0.4
+                          delay:0.f
+         usingSpringWithDamping:0.8
+          initialSpringVelocity:0.4
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         _popoverVC.view.center = self.view.center;
+                         _snapShotView.alpha = 1.f;
+                     } completion:^(BOOL finished) {
+                         _popoverVC.delegate = self;
+                         
+                     }];
+    [dismissButton addTarget:self action:@selector(dismissPopover:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_pennyTextField resignFirstResponder];
+    [_nickelTextField resignFirstResponder];
+    [_dimeTextField resignFirstResponder];
+    [_quarterTextField resignFirstResponder];
+    [_fiftyCentTextField resignFirstResponder];
+    [_singleDollarTextField resignFirstResponder];
+    [_twoDollarTextField resignFirstResponder];
+    [_fiveDollarTextField resignFirstResponder];
+    [_tenDollarTextField resignFirstResponder];
+    [_twentyDollarTextField resignFirstResponder];
+    [_fiftyDollarTextField resignFirstResponder];
+    [_hundredDollarTextField resignFirstResponder];
+}
+
+- (void)dismissPopover:(id)sender
+{
+    [UIView animateWithDuration:0.8
+                          delay:0.f
+         usingSpringWithDamping:1.f
+          initialSpringVelocity:1.f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         _popoverVC.view.center = CGPointMake(self.view.center.x, self.view.frame.size.height*2);
+                         _snapShotView.alpha = 0.f;
+                     } completion:^(BOOL finished) {
+                         _popoverVC.delegate = nil;
+                         [_popoverVC.view removeFromSuperview];
+                         [_snapShotView removeFromSuperview];
+                         _snapShotView = nil;
+                         _popoverVC = nil;
+                     }];
+}
+
+//Takes a snapshot of the View and adds a smoked glass window effect. Changing the "applyBlurWithRadius will change the how much the image is blured.
++ (UIImageView *)snapshotForView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0f);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:context];
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIImageView *snapShotView = [[UIImageView alloc] initWithFrame:view.frame];
+    UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.05];
+    snapShotView.image = [snapshotImage applyBlurWithRadius:8 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    return snapShotView;
 }
 
 @end
